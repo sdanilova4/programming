@@ -9,3 +9,4 @@ void bubble_sort(int size, int arr[size]) {
         }
     }
 }
+// если текущий > следующего, то делаем swap - меняем местами
