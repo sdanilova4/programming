@@ -1,7 +1,7 @@
 # programming
 ## на 3
 1) Используем git status, чтобы узнать, на какой ветке мы находимся.
-![alt text](../skrin/1.png)
+![alt text](skrin/1.png)
 2) Как выглядит git log:
 ![alt text](../skrin/2.png)
 3) Создадим файл sort.c и вставим туда код функции сортировки:
