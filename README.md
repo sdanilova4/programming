@@ -55,6 +55,9 @@
 ![alt text](../skrin/vetki/v11.png) 
 13. Переключимся на ветку mybranch. 
 14. видим, что file2.txt пропал
-15. Используем git diff mybranch master, чтобы увидеть разницу между двумя ветками. 
-16. Закоммитим и запушим на удаленный репо ветку mybranch (git push -u origin mybranch) 
-17.  Убедимся, что в github.com две ветки master и mybranch, не забыв запушить изменения master ветки в master 
+15. Используем git diff mybranch main, чтобы увидеть разницу между двумя ветками
+![alt text](<../skrin/vetki/Снимок экрана 2025-11-24 102704.png>)
+16. Закоммитим и запушим на удаленный репо ветку mybranch (git push -u origin mybranch)
+![alt text](<../skrin/vetki/Снимок экрана 2025-11-24 104608.png>)
+17.  Убедимся, что в github.com две ветки master и mybranch, не забыв запушить изменения master ветки в master
+![alt text](<../skrin/vetki/Снимок экрана 2025-11-24 104100.png>)
