@@ -3,36 +3,46 @@
 1) Используем git status, чтобы узнать, на какой ветке мы находимся.
 
 ![alt text](skrin/1.png)
+
 2) Как выглядит git log:
 
 ![alt text](skrin/2.png)
+
 3) Создадим файл sort.c и вставим туда код функции сортировки:
 
 ![alt text](skrin/3.png)
+
 4) Сейчас вывод git status выглядит так:
 
 ![alt text](skrin/4.png)
+
 5) Добавим файл в область stage (add) 
 6) Сейчас вывод git status выглядит так:
 
 ![alt text](skrin/5-6.png)
+
 7) Закоммитим файл в репозиторий.
 8) Сейчас вывод git status выглядит так:
 
 ![alt text](skrin/7-8.png)
+
 9) Добавим комментарий с любым текстом в этот же файл
 
 ![alt text](skrin/9.png)
+
 10)  Сейчас вывод git status выглядит так:
 
 ![alt text](skrin/10.png)
+
 11)  Добавим (add) изменение файла 
 12)  Сейчас вывод git status выглядит так:
 
 ![alt text](skrin/11-12.png)
+
 13)  Изменим файл еще раз (добавим еще комментарий)
 
 ![alt text](skrin/13.png)
+
 14)  Сделаем коммит
 
 ![alt text](skrin/14.png) 
