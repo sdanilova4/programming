@@ -46,12 +46,15 @@
 14)  Сделаем коммит
 
 ![alt text](skrin/14.png) 
+
 15)  Сейчас вывод git status и журнал (log) выглядят так:
 
 ![alt text](skrin/15.png) 
+
 16)  Добавим в stage и закоммитим последнее изменение
 
 ![alt text](skrin/16.png)
+
 17)  Запушим на удаленный репо (git push)
 
 ![alt text](skrin/17.png)
@@ -62,36 +65,45 @@
 2. Снова используем git branch, чтобы увидеть новую созданную ветку: 
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 100505.png>)
+
 3. Используем git switch mybranch (можно было и git checkout mybranch), чтобы переключиться на новую ветку:
 
 ![alt text](<skrin//vetki/Снимок экрана 2025-11-24 100611.png>)
+
 4. Изменение вывода git status при переключении между master и новой веткой:
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 100742.png>)
+
 5. Убеждаемся, что мы находимся на своей ветке mybranch, прежде чем продолжить.
 
 ![alt text](skrin/vetki/v5.png)
+
 6. Создадим файл с именем file1.txt и своим именем. 
 7. Добавим файл и закоммитьте это изменение.
 
 ![alt text](skrin/vetki/v6-7.png)
+
 8. Использовав git log --oneline --graph, видим, что наша ветка указывает на новый коммит.
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 101428.png>)
+
 9. Вернемся к ветке с именем master.
 10. Используем git log --oneline --graph 
 11. Создадим новый файл с именем file2.txt и закоммитим его. 
 12. Используем git log --oneline --graph --all, чтобы увидеть, что наша ветка указывает на новый коммит, и что теперь у двух веток разные коммиты.
 
 ![alt text](skrin/vetki/v11.png) 
+
 13. Переключимся на ветку mybranch. 
 14. видим, что file2.txt пропал
 15. Используем git diff mybranch main, чтобы увидеть разницу между двумя ветками
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 102704.png>)
+
 16. Закоммитим и запушим на удаленный репо ветку mybranch (git push -u origin mybranch)
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 104608.png>)
+
 17.  Убедимся, что в github.com две ветки master и mybranch, не забыв запушить изменения master ветки в master
 
 ![alt text](<skrin/vetki/Снимок экрана 2025-11-24 104100.png>)
