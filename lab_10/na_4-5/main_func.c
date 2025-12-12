@@ -2,6 +2,10 @@
 
 int main(){
     parall *array = malloc(N*sizeof(array));
+
+    struct parall *ptr;
+    ptr->a;
+
     // struct parall array[N] = {{2,3,4},{7,8,9},{1,5,9}};
     // struct parall array[N] = {};
     // create_N_parall(array);
