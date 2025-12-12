@@ -2,6 +2,7 @@
 #define FUNCTIONS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #define N 3
 
 typedef unsigned int uint; 
@@ -14,6 +15,8 @@ struct parall {
 };
 
 void min_V_parall(parall p[]);
-parall create_N_parall(parall array_parall[]);
+void create_N_parall(parall array_parall[]);
+void create_N_parall_point(parall *array_parall);
+void clear_arr(int n,parall *arr);
 
 #endif
