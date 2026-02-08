@@ -12,7 +12,7 @@ void swap(int *a, int *b) {
  
 void transpose(int m[N][N]) { 
   for (int i = 0; i < N; ++i) { 
-    for (int j = 0; j < N; ++j) { 
+    for (int j = i + 1; j < N; ++j) { // было int j = 0, каждая пара элементов переставляется дважды
         swap(&m[i][j], &m[j][i]); 
     } 
   } 

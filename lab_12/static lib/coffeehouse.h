@@ -13,9 +13,9 @@ typedef struct {
     const char *milk;
 }coffeehouse_t;
 
-const char *name_coffee[]={"Latte","Cappuccino","Flat White","Mocaccino","Macchiato","Raf coffee"};
-const char *coffee_beans[]={ "Arabica","Robusta","Liberica","Excelsa"};
-const char *milk[] = {"soy milk","almond milk","coconut milk", "oat milk"};
+extern const char *name_coffee[];
+extern const char *coffee_beans[];
+extern const char *milk[];
 
 void fill_random_cofeehouse(coffeehouse_t array[N]);
 

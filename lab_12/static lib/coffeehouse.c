@@ -1,5 +1,10 @@
 #include "coffeehouse.h"
 
+const char *name_coffee[]={"Latte","Cappuccino","Flat White","Mocaccino","Macchiato","Raf coffee"};
+const char *coffee_beans[]={ "Arabica","Robusta","Liberica","Excelsa"};
+const char *milk[] = {"soy milk","almond milk","coconut milk", "oat milk"};
+
+
 void fill_random_cofeehouse(coffeehouse_t array[N]) {
 
     for (int i = 0; i < N; i++)

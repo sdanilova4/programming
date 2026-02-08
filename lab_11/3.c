@@ -1,6 +1,6 @@
 #include <stdio.h> 
  
-#define SQR(x) x * x // (x*x)
+#define SQR(x) (x) * (x) //было x * x
  
 // Проблема: z != 36 
  

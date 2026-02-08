@@ -5,17 +5,17 @@
  
 typedef struct { 
     char str[4]; 
-    int num; 
+    long num;  // num не влезал в int, увеличила до long
 } NumberRepr; 
  
 void format(NumberRepr* number) { 
-    sprintf(number->str, "%3d", number->num); 
+    sprintf(number->str, "%3ld", number->num); 
 } 
  
 int main() { 
     NumberRepr number = { .num = 1025 }; 
-    format(&number); 
+    format(&number);
     printf("str: %s\n", number.str); 
-    printf("num: %d\n", number.num); 
+    printf("num: %ld\n", number.num); 
     return 0;
 }

@@ -1,23 +1,28 @@
-#include <stdio.h> 
-#include <stdlib.h> 
- 
-// Проблема: segmentation fault 
- 
-void init(int *arr, int n) {  
-    arr = malloc(n * sizeof(int)); 
-    for (long i = 0; i < n; ++i) {  
-        arr[i] = i;     
-    } 
-} 
+#include <stdio.h>
+#include <stdlib.h>
 
-int main() { 
-    int *arr = NULL; 
-    int n = 10; 
- 
-    init(&arr, n); // &arr
-    for (int i = 0; i < n; ++i) { 
-        printf("%d\n", arr[i]); 
-    } 
-    free(arr); 
-    return 0; 
-} 
+void init(int **arr, int n) {
+    *arr = malloc(n * sizeof(int));
+    if (*arr == NULL) {
+        return;3
+        
+    }
+
+    for (int i = 0; i < n; ++i) {
+        (*arr)[i] = i;
+    }
+}
+
+int main() {
+    int *arr = NULL;
+    int n = 10;
+
+    init(&arr, n);
+
+    for (int i = 0; i < n; ++i) {
+        printf("%d\n", arr[i]);
+    }
+
+    free(arr);
+    return 0;
+}
