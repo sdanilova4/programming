@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 100
+#define N 10
 
 typedef struct {
     const char *name;
@@ -21,6 +21,10 @@ void fill_random_cofeehouse(coffeehouse_t array[N]);
 
 void print_cofeehouses(coffeehouse_t array[N]);
 
-void Selection_Sort(coffeehouse_t array[N]);
+void Selection_Sort(coffeehouse_t array[N], int (*sravn)(coffeehouse_t,coffeehouse_t));
+
+void callback_fill_random_cofeehouse(coffeehouse_t array[N],void (*Selection_Sort)(coffeehouse_t array[N]));
+
+int sravn(coffeehouse_t A, coffeehouse_t B);
 
 #endif

@@ -31,7 +31,7 @@ void print_cofeehouses(coffeehouse_t array[N]) {
     printf("----------------------------------------------------\n");
 }
 
-void Selection_Sort(coffeehouse_t array[N]) { //сортировка выбором, ищем наименьшее
+void Selection_Sort(coffeehouse_t array[N], int (*sravn)(coffeehouse_t, coffeehouse_t)) { //сортировка выбором, ищем наименьшее
     int min_ind;
     coffeehouse_t temp;
     for (int i = 0; i < N - 1; i++) 
@@ -39,7 +39,11 @@ void Selection_Sort(coffeehouse_t array[N]) { //сортировка выбор�
         min_ind = i;
         for (int j = i + 1; j < N; j++)
         {
-            min_ind = array[min_ind].price < array[j].price? min_ind:j;
+            // min_ind = array[min_ind].price < array[j].price? min_ind:j;
+            if (sravn( array[min_ind], array[j]))
+            {
+                min_ind = j;
+            }
         }        
         if (min_ind != i) {
             temp = array[i];
@@ -47,4 +51,22 @@ void Selection_Sort(coffeehouse_t array[N]) { //сортировка выбор�
             array[min_ind] = temp; 
         }
     }
+}
+
+int sravn(coffeehouse_t A, coffeehouse_t B){
+    if (A.price > B.price){
+        return 1;
+    } return 0;
+}
+
+
+void callback_fill_random_cofeehouse(coffeehouse_t array[N],void (*Selection_Sort)(coffeehouse_t array[N])) {
+    for (int i = 0; i < N; i++)
+    {
+        array[i].name = name_coffee[(rand() % 5) + 1];
+        array[i].cofee_bean = coffee_beans[(rand() % 3) + 1];
+        array[i].price =(rand() % 10 + 1) * 10 + 40;
+        array[i].milk = milk[(rand() % 3) + 1];
+    }
+    Selection_Sort(array);
 }

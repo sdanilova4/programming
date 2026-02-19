@@ -1,8 +1,10 @@
 #include "coffeehouse.h"
 #include <sys/time.h>
 
+
 int main() {
     coffeehouse_t A[N];
+    // coffeehouse_t* A = malloc(N * sizeof(coffeehouse_t));
 
     struct timeval start, end;
 
@@ -12,7 +14,8 @@ int main() {
     
     gettimeofday(&start, NULL); // Замеряем время ДО
 
-    Selection_Sort(A);
+    // callback_fill_random_cofeehouse(A,Selection_Sort);
+    Selection_Sort(A,sravn);
 
     gettimeofday(&end, NULL); // Замеряем время ПОСЛЕ
 
