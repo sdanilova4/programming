@@ -4,3 +4,5 @@ other_func.o
 main_func.o
 program
 .gitignore
+lab_13/na_3-4/build
+lab_13/na_5/C-Programming/cmake_task/build

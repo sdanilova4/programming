@@ -25,6 +25,6 @@ void Selection_Sort(coffeehouse_t array[N], int (*sravn)(coffeehouse_t,coffeehou
 
 void callback_fill_random_cofeehouse(coffeehouse_t array[N],void (*Selection_Sort)(coffeehouse_t array[N]));
 
-int sravn123(coffeehouse_t A, coffeehouse_t B);
+int sravn(coffeehouse_t A, coffeehouse_t B);
 
 #endif
