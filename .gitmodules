@@ -1,3 +1,12 @@
 [submodule "lab_9/programming"]
 	path = lab_9/programming
 	url = https://github.com/sdanilova4/programming
+[submodule "prak_3/crawl"]
+	path = prak_3/crawl
+	url = https://github.com/chieund/crawl
+[submodule "prak_3/CH32V307-makefile-example"]
+	path = prak_3/CH32V307-makefile-example
+	url = https://github.com/gregdavill/CH32V307-makefile-example
+[submodule "prak_3/makefile-example"]
+	path = prak_3/makefile-example
+	url = https://github.com/diffstorm/makefile-example
