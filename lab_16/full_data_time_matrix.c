@@ -45,7 +45,7 @@ int main() {
     int sizes[] = {500, 1000, 1500, 2000, 2500};
     int threads_counts[] = {1, 2, 4, 8, 16, 32, 64, 128};
     int num_sizes = 5;
-    int num_threads_configs = 8;
+    int num_threads = 8;
 
     FILE *fp = fopen("stats.csv", "w");
     if (fp == NULL) return 1;
@@ -55,7 +55,7 @@ int main() {
 
     for (int i = 0; i < num_sizes; i++) {
         int N = sizes[i];
-        for (int j = 0; j < num_threads_configs; j++) {
+        for (int j = 0; j < num_threads; j++) {
             int T = threads_counts[j];
             double **A = matrix_maker(N);
             double **B = matrix_maker(N);
@@ -99,5 +99,4 @@ int main() {
 
     fclose(fp);
     printf("Готово!!!\n");
-    return 0;
 }
