@@ -14,7 +14,7 @@ with open('stats.csv', 'r') as f:
         data[t]['time'].append(float(row['Time']))
 
 for t in sorted(data.keys()):
-    plt.plot(data[t]['n'], data[t]['time'], marker='o', label=f'{t} Threads')
+    plt.plot(data[t]['n'], data[t]['time'], label=f'{t} Threads')
 
 plt.xlabel('Размер матрицы (N)')
 plt.ylabel('Время (с)')
