@@ -4,7 +4,7 @@
 void init(int **arr, int n) {
     *arr = malloc(n * sizeof(int));
     if (*arr == NULL) {
-        return;3
+        return;
         
     }
 
